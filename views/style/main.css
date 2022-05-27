@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+.container{
+display: flex;
+
+flex-direction: column;
+background-color: red;
+height: 100%;
+width: 100%;
+}
+.buttonBar{
+    width: 100%;
+    height: auto;
+margin-bottom: auto;
+display: flex;
+z-index: 250; 
+box-shadow:0 3px 2px rgb(7, 7, 7);
+background-color: rgb(36, 36, 36);
+text-align: center;    
+
+}
+.btn{
+
+z-index: 400;
+    padding: 20px;
+    margin: 15px;
+}
+
+.block{
+    background-color: rgba(66, 43, 43, 0.65);
+
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn:last-child{
+ 
+ position: absolute;
+ right: 0;
+    float: right;
+}
+
+.btn{
+background-color: rgb(53, 53, 53);
+color: #fff;
+padding-left: 50px;
+padding-right: 50px;
+border: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 700;
+font-size: medium;
+border-radius: 5px;
+box-shadow: 0 5px 0px rgb(7, 7, 7);
+
+}
+.btn:hover{
+    background-color: rgb(31, 31, 31);
+    
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(3px);
+    box-shadow: 0 2px 0px rgb(7, 7, 7);
+}
+
+
+.caption{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.frame{
+background-image: url("../images/background.jpg");
+    display:flex;
+height: 100%;
+flex-direction: row;
+ 
+    
+}
+
+
+#code{
+ width: 50%;
+ outline:none;
+ 
+background-color: rgb(243, 243, 243);
+
+}
+#code:focus{
+    z-index: 201;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "source code pro";
+box-shadow: 0 0 4px 3px yellow;
+border-style: groove;
+}
+.view{
+    background-color: rgb(243, 243, 243);;
+    width: 50%;
+    border-radius: 5px;
+    margin-left : 1px
+}
+
+.auth{
+    display:flex;
+    position:fixed;
+    font-size: 35px;
+
+    left: 87%;
+    top: 85%;
+    margin: 10px auto;
+    
+
+}
+.auth a{
+    text-decoration: none;
+}
+.auth a span{
+    font-size: 72px;
+    display: block;
+    color: rgb(0, 110, 255);
+
+}
+.material-icons .md-48{
+    font-size: 48px;
+}
+
+html {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+        
+}

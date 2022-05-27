@@ -1,0 +1,26 @@
+{
+  "name": "htmltopdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=ico.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\" "
+  },
+  "keywords": [],
+  "author": "https://t.me/Abdumannon_Shamsiyev",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "13.2.1",
+    "html-pdf": "^3.0.1",
+    "html-pdf-node": "^1.0.7",
+    "html-pdf-node2": "^1.0.7",
+    "pdf-creator-node": "^2.2.3"
+  },
+  "build": {},
+  "devDependencies": {
+    "electron": "13.2.1",
+    "electron-builder": "^22.11.7",
+    "electron-packager": "^15.3.0"
+  }
+}
